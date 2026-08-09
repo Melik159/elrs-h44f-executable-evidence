@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >-
+  If you use this evidence package, please cite the associated preprint and
+  identify the public campaign UUIDs relevant to your analysis.
+title: ELRS 4.1 and H44F Executable Evidence
+type: software
+version: 1.0.0
+date-released: 2026-08-09
+authors:
+  - family-names: Lemariey
+    given-names: Mélik
+    orcid: https://orcid.org/0000-0002-1041-0113
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: >-
+    Non-Cooperative Cyber-Electromagnetic Exploitation of UAV C2 Links:
+    Identity Reconstruction, FHSS Tracking, and Controlled Transmitter
+    Substitution
+  authors:
+    - family-names: Lemariey
+      given-names: Mélik
+      orcid: https://orcid.org/0000-0002-1041-0113
+  year: 2026

@@ -1,0 +1,30 @@
+ELRS H44F EXECUTABLE EVIDENCE — LICENSING NOTICE
+
+Copyright 2026 Mélik Lemariey
+
+1. Software
+
+The original software in `scripts/`, `verify.py`, and `verify.sh` is licensed
+under the Apache License, Version 2.0. The complete license text is available
+in `LICENSES/Apache-2.0.txt`.
+
+SPDX-License-Identifier: Apache-2.0
+
+2. Documentation and evidence
+
+The original documentation and the sanitized evidence records and logs in
+`evidence/` are licensed under the Creative Commons Attribution 4.0
+International license. The complete legal code is available in
+`LICENSES/CC-BY-4.0.txt` and at:
+
+https://creativecommons.org/licenses/by/4.0/
+
+SPDX-License-Identifier: CC-BY-4.0
+
+3. Upstream material
+
+This repository does not redistribute the ExpressLRS source files used by the
+optional replay. Those files are obtained separately from the official
+ExpressLRS repository and remain subject to their own license. Source URLs,
+immutable commits, and SHA-256 digests are supplied for verification. No
+third-party work is relicensed by this notice.

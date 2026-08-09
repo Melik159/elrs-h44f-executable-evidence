@@ -1,0 +1,48 @@
+{
+  "schema": "elrs41-public-exhaustive-evidence-v1",
+  "status": "PASS",
+  "tag": "4.1.0",
+  "commit": "a9d4a9cb5b5687c4c9d7e9e7fbdf44ad93651da6",
+  "domain": "FCC915",
+  "radio": "SX127X",
+  "ota_version": 4,
+  "uid4": 86,
+  "uid5": 120,
+  "canonical_uid2_uid3_classes": 32768,
+  "positions_per_class": 240,
+  "comparisons_per_implementation": 7864320,
+  "matrix_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+  "private_original_report_sha256": "66740d79a56d685f091ce235ffd89cc5ba76faf9d2b5173d10f6fd16c2ee1d47",
+  "source_files": {
+    "src/lib/FHSS/FHSS.cpp": "1e0fed88b3b699ac1274e4debf42809f88af74856cdebc7d2249b63a96d2063d",
+    "src/lib/FHSS/FHSS.h": "98b55ec38194a6722876d62134a5e6a160475e8b81366d592abbf67f193c41b8",
+    "src/lib/FHSS/random.cpp": "b1eda6ed1f146dc85e8568de31e6e0dae9f4970e165b2bb9ddfd2d315eaec871",
+    "src/lib/FHSS/random.h": "9c05dcd7763730843ff4edbeddbcf0e18a5999559be9ca37630b7d14283bc03f"
+  },
+  "comparisons": [
+    {
+      "name": "elrs_4_1_upstream_vs_project_python",
+      "entries": 7864320,
+      "mismatches": 0,
+      "reference_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "subject_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "status": "PASS"
+    },
+    {
+      "name": "elrs_4_1_upstream_vs_project_numba",
+      "entries": 7864320,
+      "mismatches": 0,
+      "reference_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "subject_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "status": "PASS"
+    },
+    {
+      "name": "elrs_4_1_upstream_vs_elrs_4_0_1_upstream",
+      "entries": 7864320,
+      "mismatches": 0,
+      "reference_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "subject_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "status": "PASS"
+    }
+  ]
+}

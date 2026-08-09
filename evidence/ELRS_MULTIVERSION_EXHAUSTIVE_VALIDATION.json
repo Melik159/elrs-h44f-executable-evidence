@@ -1,0 +1,53 @@
+{
+  "schema": "elrs-multiversion-public-exhaustive-evidence-v1",
+  "status": "PASS",
+  "domain": "FCC915",
+  "radio": "SX127X",
+  "canonical_uid2_uid3_classes_per_family": 32768,
+  "total_compared_entries": 31981568,
+  "negative_control_passed": true,
+  "deterministic_roundtrips": 64,
+  "private_original_report_sha256": "0e21e32fd6ff5231fd74669afac10d3d425221d1c4133fbd14216398436fe600",
+  "families": [
+    {
+      "family": "elrs-1",
+      "representative_tag": "1.2.1",
+      "version_range": "1.0.0-1.2.1",
+      "positions_per_class": 256,
+      "compared_entries": 8388608,
+      "matrix_sha256": "5288840472cb8c95bea40014a33190676124c47a213f1b80daf50861ce1be823",
+      "mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "family": "elrs-2",
+      "representative_tag": "2.5.2",
+      "version_range": "2.0.0-2.5.2",
+      "positions_per_class": 240,
+      "compared_entries": 7864320,
+      "matrix_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "family": "elrs-3",
+      "representative_tag": "3.6.4",
+      "version_range": "3.0.0-3.6.4",
+      "positions_per_class": 240,
+      "compared_entries": 7864320,
+      "matrix_sha256": "6b49628a9bddde907bbb1e63e428f74156e07d0cf110b80bf2b6a93601702901",
+      "mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "family": "elrs-4",
+      "representative_tag": "4.0.1",
+      "version_range": "4.0.0-4.0.1",
+      "positions_per_class": 240,
+      "compared_entries": 7864320,
+      "matrix_sha256": "a82024c1f89fcde103406c633fa8495b0bd6cea50c5762ef5cd51d8eb02ff303",
+      "mismatches": 0,
+      "status": "PASS"
+    }
+  ]
+}

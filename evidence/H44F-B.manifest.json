@@ -1,0 +1,12 @@
+{
+  "absolute_timestamps_present": false,
+  "campaign": "H44F-B",
+  "ephemeral_challenge_redacted": true,
+  "hardware_verdict": "PASS",
+  "host_paths_present": false,
+  "mode": "FAST",
+  "public_log": "H44F-B_583431a1-9948-4173-9b9b-14954169cb33.log",
+  "public_sanitized_sha256": "add06f78e54a93feee78e5f6f366eb11d1ca69ebd2e50513d9b4b3ed44ab02f2",
+  "session_uuid": "583431a1-9948-4173-9b9b-14954169cb33",
+  "target_distinct_hops": 5
+}

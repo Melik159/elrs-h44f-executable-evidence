@@ -1,0 +1,33 @@
+{
+  "alias": "H44F-A",
+  "artifacts": {
+    "criteria": {
+      "sha256": "b0e5153229b302c146fe06dce84d11926b5638234dd58ce346350c16afb3fa07"
+    },
+    "firmware_bin": {
+      "sha256": "1562ecd098b51ce64630a12f6a23d5d9cdc41b99d23801cc2ce6fa661859be80"
+    },
+    "public_log": {
+      "file": "H44F-A_5e47158c-14cb-4395-a803-47ea468e8e8a.log",
+      "sha256": "e8e4a73a0d802861cec98e5ef0a34aaf2366cd9e5624b872626d3cb764fc4aff"
+    },
+    "raw_parser": {
+      "sha256": "6ff6c7df62dbca13832f7af74867bc4b1e570060713a30e727a91b9d2d890509"
+    },
+    "reconstructor": {
+      "sha256": "1b69ccaff26a7153c5cd02055885e3fe693fdf3f16ed2ce8db58002651e68807"
+    },
+    "verifier": {
+      "sha256": "c95870cdeabdbd54bce50c9edddc29a754249719d821c615a661dfd05402c31c"
+    }
+  },
+  "campaign": "H44F-A",
+  "public_uuid": "5e47158c-14cb-4395-a803-47ea468e8e8a",
+  "sanitization": {
+    "absolute_time_disclosed": false,
+    "host_disclosed": false,
+    "local_path_disclosed": false,
+    "private_source_sha256_published": false
+  },
+  "verdict": "PASS"
+}
