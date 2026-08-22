@@ -61,18 +61,46 @@ The preprint PDFs are intentionally not distributed in this repository. They
 are deposited separately through HAL; this repository contains only the
 executable and anonymized evidence package.
 
+
 ## Full replay against the ExpressLRS 4.1 sources
 
 The one-command verification checks the sanitized validation record and its
-cryptographic anchors. To recompute all 7,864,320 positions directly from the
-pinned upstream sources, run:
+cryptographic anchors. To independently recompute all 7,864,320 positions from
+the exact pinned ExpressLRS upstream sources, copy and run the following from
+the root of this repository:
 
 ```bash
-./scripts/replay_elrs41_upstream.sh /path/to/ExpressLRS-4.1.0
+(
+    set -euo pipefail
+
+    UPSTREAM_ROOT="$(mktemp -d)"
+    trap 'rm -rf "$UPSTREAM_ROOT"' EXIT
+
+    git clone https://github.com/ExpressLRS/ExpressLRS.git \
+        "$UPSTREAM_ROOT/ExpressLRS-4.1.0"
+
+    git -C "$UPSTREAM_ROOT/ExpressLRS-4.1.0" checkout --detach \
+        a9d4a9cb5b5687c4c9d7e9e7fbdf44ad93651da6
+
+    ./scripts/replay_elrs41_upstream.sh \
+        "$UPSTREAM_ROOT/ExpressLRS-4.1.0"
+)
 ```
 
-The supplied checkout must be clean and positioned exactly at commit
-`a9d4a9cb5b5687c4c9d7e9e7fbdf44ad93651da6`. The script also verifies the
-four FHSS source-file digests, compiles a host-only executable, generates the
-upstream and Python matrices in a temporary directory, and requires byte-for-
-byte equality. It neither builds nor flashes embedded firmware.
+This creates a temporary clean ExpressLRS checkout, positions it exactly at
+commit `a9d4a9cb5b5687c4c9d7e9e7fbdf44ad93651da6`, runs the complete replay, and
+removes the temporary checkout afterwards.
+
+The replay script independently verifies that the supplied checkout is clean
+and positioned at the expected commit. It also verifies the four FHSS
+source-file digests, compiles a host-only executable, generates the upstream
+and Python matrices in a temporary directory, and requires byte-for-byte
+equality. It neither builds nor flashes embedded firmware.
+
+If an exact clean ExpressLRS checkout is already available locally, it may
+instead be supplied directly:
+
+```bash
+./scripts/replay_elrs41_upstream.sh /actual/path/to/ExpressLRS-4.1.0
+```
+
